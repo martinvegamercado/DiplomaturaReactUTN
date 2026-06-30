@@ -1,0 +1,43 @@
+
+body {
+    background-color: #f4f4f9; 
+}
+
+
+h1 {
+    text-align: center; 
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+h3 {
+    color: #2c3e50; 
+    box-shadow: 0 0 5px #888;
+}
+
+
+p {
+    font-family: Arial, sans-serif;
+    column-count: 2;
+    column-gap: 20px; 
+}
+
+img {
+    width: 100%;        
+    max-width: 250px;   
+    height: auto;       
+    display: block;     
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+.roboto-fuente {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: oblique;
+  font-variation-settings:
+    "wdth" 100;
+}
