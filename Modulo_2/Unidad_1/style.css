@@ -1,0 +1,73 @@
+/* --- ESTILOS GENERALES (Comunes para todos) --- */
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-family: serif; 
+        }
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+
+        /* --- EJERCICIO 01 --- */
+        /* Cajas apiladas verticalmente a la derecha */
+        .container-1 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin-bottom: 40px;
+            
+            
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-end;  
+        }
+        .container-1 .box {
+            width: 100px; 
+            flex-grow: 1; 
+        }
+
+
+        /* --- EJERCICIO 02 --- */
+       
+        .container-2 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin-bottom: 40px;
+            
+            
+            display: flex;
+            flex-direction: row-reverse; 
+            align-items: center;         
+        }
+        .container-2 .box {
+            height: 100px; 
+            flex-grow: 1;  
+        }
+
+
+        /* --- EJERCICIO 03 --- */
+        /* Cajas separadas horizontalmente con espacios entre ellas */
+        .container-3 {
+            width: 100%;
+            max-width: 800px; 
+            height: 150px;
+            border: 2px solid black;
+            margin-bottom: 40px;
+            
+           
+            display: flex;
+            flex-direction: row;             
+            justify-content: space-between;  
+            
+        }
+        .container-3 .box {
+            width: 150px; 
+        }
