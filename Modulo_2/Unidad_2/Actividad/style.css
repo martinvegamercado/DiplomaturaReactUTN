@@ -1,0 +1,137 @@
+/* Reseteo básico y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b2b2b; /* Fondo oscuro exterior visible en escritorio */
+    font-family: "Times New Roman", Times, serif; /* Fuente serif como en la imagen */
+    color: #000;
+}
+
+/* Contenedor principal (Fondo verde pálido) */
+.container {
+    background-color: #9db29c;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* =========================================
+   DISEÑO MÓVIL (Por defecto)
+   ========================================= */
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.sidebar-nav {
+    background-color: #facd64; /* Fondo amarillo en móvil */
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 15px;
+}
+
+.sidebar-nav li:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    display: block;
+    margin-left: 20px;
+}
+
+.main-content {
+    background-color: #fcf1cb; /* Fondo crema claro */
+    padding: 30px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.main-content h2, 
+.extra-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.main-content p, 
+.extra-content p {
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+.extra-content {
+    background-color: #cdc8a7; /* Fondo beige oscuro */
+    padding: 30px 20px;
+    border-bottom: 1px solid #333;
+}
+
+
+/* =========================================
+   DISEÑO DE ESCRITORIO (Media Query)
+   ========================================= */
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        /* Se le da un poco de padding al contenedor para que no pegue a los bordes de la pantalla */
+        margin: 40px auto;
+        min-height: auto;
+    }
+
+    header {
+        border-bottom: none;
+        padding: 30px 40px;
+    }
+
+    /* Convertimos el wrapper en un contenedor Flexbox para alinear en columnas */
+    .content-wrapper {
+        display: flex;
+        align-items: flex-start; /* Hace que los bloques no se estiren a lo alto si tienen poco contenido */
+        gap: 20px;
+        padding: 0 40px 40px 40px;
+    }
+
+    /* Navegación (Columna Izquierda) */
+    .sidebar-nav {
+        flex: 0 0 150px; /* Ancho fijo */
+        background-color: #d84b37; /* Cambia a rojo/naranja en escritorio */
+        border: none;
+        padding: 20px;
+    }
+
+    .sidebar-nav a {
+        color: #fff; /* El texto pasa a ser blanco */
+        margin-left: 0;
+    }
+
+    /* Contenido Principal (Columna Central) */
+    .main-content {
+        flex: 1; /* Ocupa el espacio restante disponible */
+        border: none;
+        padding: 30px;
+    }
+
+    /* Contenido Adicional (Columna Derecha) */
+    .extra-content {
+        flex: 0 0 250px; /* Ancho fijo */
+        border: none;
+        padding: 30px;
+    }
+}
