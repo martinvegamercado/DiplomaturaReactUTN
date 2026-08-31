@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Encabezado from "./components/Encabezado";
-import  TarjetaProducto from "./components/TarjetaProducto";
+import Encabezado  from "@/components/Encabezado.jsx"; 
+import TarjetaProducto from "@/components/TarjetaProducto";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
