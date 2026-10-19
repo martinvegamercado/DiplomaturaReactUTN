@@ -1,0 +1,10 @@
+{
+  "name": "login-utn-express",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Actividad UTN: Login y logout con Express, MySQL y sesiones",
+  "main": "app.js",
+  "scripts": {"start": "node app.js", "dev": "nodemon app.js", "seed": "node seed.js"},
+  "dependencies": {"dotenv": "^16.4.5", "express": "^4.21.2", "express-session": "^1.18.1", "md5": "^2.3.0", "mysql2": "^3.12.0"},
+  "devDependencies": {"nodemon": "^3.1.9"}
+}
